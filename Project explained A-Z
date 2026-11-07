@@ -1,0 +1,143 @@
+**Database Project – Team Roles & Work Distribution**
+
+Hi everyone,
+
+We are starting the execution of our Database Project (Phase 1 – Asset Management System).
+
+We are 6 members, so I've divided the work into 6 responsibilities. Each member should choose their assigned role and start working on their deliverables.
+
+**1. Team Roles & Responsibilities**
+
+**Member 1 – Project Manager & Database Integration**
+
+- Coordinate the team and follow up on progress.
+- Create the database in Microsoft SQL Server.
+- Configure the required database files (MDF, NDF and 2 LDF files).
+- Collect and integrate all SQL scripts.
+- Make sure everything works together.
+- Prepare the final submission.
+
+**Member 2 – ERD Designer**
+
+- Create the Entity Relationship Diagram using draw\.io.
+- Include all 7 entities, attributes, PKs and FKs.
+- Show all relationships and cardinalities (1 and M).
+- Export the digital diagram to PDF.
+- Prepare the hand-drawn ERD version.
+
+**Member 3 – Mapping Diagram Designer**
+
+- Create the Mapping Diagram using draw\.io.
+- Convert the approved ERD into relational tables.
+- Include all columns, data types, PKs and FKs.
+- Draw arrows connecting every FK to its referenced PK.
+- Export the digital diagram to PDF.
+- Prepare the hand-drawn Mapping Diagram.
+
+**Member 4 – SQL Tables Developer**
+
+- Write the CREATE TABLE scripts.
+- Define all columns using the agreed data types.
+- Implement all Primary Keys and Foreign Keys.
+- Make sure the relationships match the approved diagrams.
+- Deliver the SQL script ready for integration.
+
+**Member 5 – SQL Constraints Developer**
+
+- Implement UNIQUE constraints.
+- Implement CHECK constraints.
+- Implement DEFAULT constraints.
+- Ensure all mandatory columns have NOT NULL.
+- Use clear and consistent constraint names.
+- Test that the constraints work correctly.
+
+**Member 6 – Testing & Documentation**
+
+- Prepare realistic sample data.
+- Write INSERT scripts.
+- Test the relationships and constraints.
+- Test invalid data to ensure constraints reject it.
+- Capture screenshots from SQL Server.
+- Prepare the testing documentation.
+
+---
+
+**2. VERY IMPORTANT – Database Structure & Consistency Rules**
+
+To avoid confusion, duplicated work and different versions of the database, we must all follow ONE approved database structure.
+
+Our database will contain exactly these 7 tables:
+
+1. Categories
+2. Locations
+3. Employees
+4. Assets
+5. AssetAssignments
+6. Maintenance
+7. Disposals
+
+**The following rules are mandatory for everyone:**
+
+1. All members must use exactly the same table names.
+2. Column names and data types must remain consistent across all work.
+3. Primary Keys and Foreign Keys must match the approved database design.
+4. Relationships and cardinalities must be identical in the ERD, Mapping Diagram and SQL implementation.
+5. Nobody should add, remove or rename tables or columns independently.
+6. Nobody should change a relationship without discussing it with the team first.
+7. All constraints must have clear and consistent names.
+8. Any approved change must be communicated to everyone and reflected in ALL deliverables.
+
+**Our approved relationships:**
+
+- Categories → Assets (1)
+- Locations → Assets (1)
+- Assets → AssetAssignments (1)
+- Employees → AssetAssignments (1)
+- Assets → Maintenance (1)
+- Employees → Maintenance (1)
+- Assets → Disposals (1:0..1)
+- Employees → Disposals (1)
+
+The M relationship between Employees and Assets is resolved through AssetAssignments.
+
+---
+
+**3. How We Will Work Together**
+
+- Member 2 and Member 3 must coordinate to ensure the ERD and Mapping Diagram are identical in structure.
+- Member 4 must follow the approved Mapping Diagram when writing SQL.
+- Member 5 must apply constraints to the exact tables and columns defined in the database structure.
+- Member 6 must test the actual integrated database, not a separate or modified version.
+- I will coordinate the integration and make sure all deliverables are consistent.
+
+**Important:** Please don't start creating your own versions of tables or relationships. We must work from one agreed structure to avoid rework.
+
+---
+
+**4. Final Deliverables**
+
+At the end, we should have:
+
+- Complete ERD (draw\.io + hand-drawn).
+- Complete Mapping Diagram (draw\.io + hand-drawn).
+- SQL database creation script.
+- SQL table creation script.
+- SQL constraints script.
+- SQL sample data and testing scripts.
+- Screenshots and final documentation.
+
+**5. Individual Preparation**
+
+Remember that the TA may ask ANY member to perform SQL operations individually, such as:
+
+- Add or drop a constraint.
+- Create a new table.
+- Add a Foreign Key.
+- Modify an existing column.
+- Add or remove a constraint.
+
+Therefore, everyone must understand the complete database, not just their assigned task.
+
+**Let's keep everything organized, communicate changes before implementing them, and work toward one consistent and professional final project.**
+
+Please reply with the role you want to take so we can finalize the assignments and start execution.
